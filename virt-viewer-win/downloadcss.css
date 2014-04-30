@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,div,ul,li,form,border,header,nav,box,p
+	{
+	margin:0;
+	padding:0;
+    }
+body{
+	font-size:12px;
+	font-family:microsoft yahei;
+	}
+ul,ol{
+	list-style:none;
+	}
+.clearfix{
+	float:none;
+	clear:both;
+	line-height:0;
+	height:0;
+	padding:0;
+	margin:0;
+	}
+#menu{
+	height:60px;
+	}
+#nav{
+	width:900px;
+	margin:0 auto;
+	height:60px;
+	}
+#nav img{
+	float:left;
+	}
+#nav span{
+	float:right;
+	display:block;
+	margin-top:35px;
+	}
+#center{
+	height:530px;
+	background:url(img/bg.jpg);
+	}
+
+.wenzi{
+    color:#fff;
+	font-size:36px;
+	font-weight:700;
+	padding:100px 0 0 600px;
+	display:block;
+	}
+#center ul{
+	margin:70px 0 0 600px;
+	}
+#center ul li{
+	margin-left:80px;
+	width:300px;
+	height:80px;
+	}
+#center ul li a{
+	color:#FFF;
+	font-size:24px;	
+	margin-left:20px;
+	text-decoration:none;
+	
+	}
+#center ul li a:hover{
+	color:#63b62f;
+	}
+#center ul li.one{
+	margin-top:-3px;}
