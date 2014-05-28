@@ -3,7 +3,7 @@
 
 Name:          virt-viewer-win
 Version:       0.0.1
-Release:       2%{?dist}
+Release:       3%{?dist}
 
 Summary:       spice client for windows
 Group:         Documentation
@@ -63,6 +63,9 @@ fi
 %{virt_viewer_win_dir}/*
 
 %changelog
+* Thu May 28 2014 Zhao Chao <chao.zhao@eayun.com> 0.0.1-3
+- add downloading webpage.
+
 * Sun Apr 20 2014 Zhao Chao <chao.zhao@eayun.com> 0.0.1-2
 - add SELinux support;
 - add apache configure file.
