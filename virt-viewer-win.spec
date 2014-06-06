@@ -3,7 +3,7 @@
 
 Name:          virt-viewer-win
 Version:       0.0.1
-Release:       3%{?dist}
+Release:       4%{?dist}
 
 Summary:       spice client for windows
 Group:         Documentation
@@ -43,6 +43,7 @@ Alias /eayunVirt "%{virt_viewer_win_dir}"
 Options -Indexes
 Order allow,deny
 Allow from all
+AddType application/octet-stream .msi
 </Directory>
 EOF
 
@@ -63,6 +64,10 @@ fi
 %{virt_viewer_win_dir}/*
 
 %changelog
+* Thu May 28 2014 Zhao Chao <chao.zhao@eayun.com> 0.0.1-4
+- fix x64 client href url.
+- fix mime type settings for msi files downloading.
+
 * Thu May 28 2014 Zhao Chao <chao.zhao@eayun.com> 0.0.1-3
 - add downloading webpage.
 
