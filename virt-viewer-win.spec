@@ -38,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 semanage fcontext -a -t httpd_sys_content_t '%{virt_viewer_win_dir}(/.*)?' 2>/dev/null || :
 restorecon -R %{virt_viewer_win_dir} || :
 cat > %{virt_viewer_win_httpconf} <<EOF
-Alias /eayunVirt "%{virt_viewer_win_dir}"
+Alias /help "%{virt_viewer_win_dir}"
 <Directory "%{virt_viewer_win_dir}">
 Options -Indexes
 Order allow,deny
