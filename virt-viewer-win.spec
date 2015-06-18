@@ -43,6 +43,7 @@ Alias /eayunVirt "%{virt_viewer_win_dir}"
 Options -Indexes
 Order allow,deny
 Allow from all
+Require all granted
 AddType application/octet-stream .msi
 </Directory>
 EOF
